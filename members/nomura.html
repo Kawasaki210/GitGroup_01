@@ -39,6 +39,25 @@
         .comments, .links {
             margin: 2rem 0;
         }
+        .counter {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .counter button {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            margin: 0.5rem;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 12px; /* ボタンの角を丸くする */
+        }
+        .counter .increment {
+            background-color: blue;
+        }
+        .counter .reset {
+            background-color: red;
+        }
         footer {
             background-color: #333;
             color: #fff;
@@ -50,9 +69,7 @@
 <body>
 
 <header>
-    <h1>野村さんの出身校紹介ページ
-        （作成者：逢澤）
-    </h1>
+    <h1>野村さんの出身校紹介ページ</h1>
 </header>
 
 <div class="container">
@@ -63,11 +80,10 @@
 
     <div class="content">
         <h2>学校情報</h2>
-        <p><strong>学校名:</strong> 精華学園高等学校</p>
+        <p><strong>学校名:</strong> 精華学園高等学校 </p>
         <p><strong>創立:</strong> 2009年7月1日</p>
-        <p><strong>特徴:</strong> </p>
-        <p><strong>所属していたクラス:</strong> 3年A組</p>
-        <p><strong>担任:</strong> 〇〇先生</p>
+        <p><strong>特徴:</strong> 様々な分野に特化したコースが多いことです。</p>
+        <p><strong>所属していたクラス:</strong> 3年B組</p>
     </div>
 
     <div class="content comments">
@@ -77,12 +93,19 @@
         </div>
     </div>
 
+    <div class="content counter">
+        <h2>カウントボタン</h2>
+        <p>ボタンを押した回数: <span id="count">0</span></p>
+        <button class="increment" onclick="incrementCount()">カウント</button>
+        <button class="reset" onclick="resetCount()">リセット</button>
+    </div>
+
     <div class="content links">
         <h2>班員紹介ページ</h2>
         <ul>
-            <li><a href="member1.html">岡本</a></li>
-            <li><a href="member2.html">杉山</a></li>
-            <li><a href="member3.html">野村</a></li>
+            <li><a href="member1.html">岡本の紹介ページ</a></li>
+            <li><a href="member2.html">杉山の紹介ページ</a></li>
+            <li><a href="member3.html">野村の紹介ページ</a></li>
             <!-- その他の班員リンクを追加 -->
         </ul>
     </div>
@@ -95,6 +118,20 @@
 <footer>
     <p>&copy; 2024 野村さんの出身校紹介ページ. All rights reserved.</p>
 </footer>
+
+<script>
+    let count = 0;
+
+    function incrementCount() {
+        count++;
+        document.getElementById('count').innerText = count;
+    }
+
+    function resetCount() {
+        count = 0;
+        document.getElementById('count').innerText = count;
+    }
+</script>
 
 </body>
 </html>
