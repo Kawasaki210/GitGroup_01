@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>笠岡商業高等学校</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="../css/okamoto.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+        </nav>
+    </header>
+    <div id="clock">00:00:00</div>
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('clock').textContent = timeString;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();  // 初回の呼び出し
+    </script>
+
+<div id="container">
+
+<div id="contents">
+
+<div id="menubar">
+<nav>
+</nav>
+</div>
+<!--/#menubar-->
+
+<!--スライドショー（slick）-->
+<aside class="mainimg-slick">
+    <div><img src="../img/1.jpg" alt=""></div>
+    <div><img src="../img/2.jpg" alt=""></div>
+    <div><img src="../img/3.jpg" alt=""></div>
+</aside>
+
+<main>
+
+<section>
+
+<h2>笠岡商業高等学校</h2>
+<h3>岡本浩直</h3>
+<p>本校は，県下の商業高校で2番目に歴史と伝統のある学校です。
+    「勉学」「特別活動」「部活動」のバランスある教育を推進し、教育活動全般を通して「知」「徳」「体」の均衡のとれた人材の育成を目指しています。</p>
+<p>入っていたクラス</p>
+<p><strong class="color-check">この学校の特徴</strong><br>
+
+<h3>リンク</h3>
+<p class="c"><a href="about.html">こちらをご覧下さい。</a></p>
+
+</section>
+
+<section>
+
+<h2>ほかのメンバーのサイト</h2>
+
+</section>
+
+</main>
+
+</div>
+<!--/#contents-->
+
+<footer>
+<small>kawasaki&copy; <a href="index.html">サイト名</a> All Rights Reserved.</small>
+</footer>
+
+</div>
+<!--/#container-->
+
+</body>
+</html>
