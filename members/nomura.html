@@ -10,7 +10,7 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #add8e6;
         }
         header {
             background-color: #333;
@@ -32,9 +32,12 @@
             color: #333;
         }
         .school-image {
-            width: 100%;
+            width: 70%;
             height: auto;
             margin: 2rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         .comments, .links {
             margin: 2rem 0;
@@ -69,44 +72,49 @@
 <body>
 
 <header>
-    <h1>野村さんの出身校紹介ページ</h1>
+    <h1>野村さんの出身校紹介ページ（作成者：逢澤）</h1>
+    <nav>
+        <a href="#school-info">学校情報</a>
+        <a href="#comments-section">コメント</a>
+        <a href="#counter-section">カウントボタン</a>
+        <a href="#links-section">班員紹介</a>
+    </nav>
 </header>
 
 <div class="container">
-    <div class="content">
-        <h2>学校の画像</h2>
-        <img src="C:\Users\a-aizawa\Desktop\開発技術\GitGroup_01\img\seikagakuen.jpg" alt="学校の画像" class="school-image">
-    </div>
-
-    <div class="content">
+    <div id="school-info" class="content">
         <h2>学校情報</h2>
-        <p><strong>学校名:</strong> 精華学園高等学校 </p>
-        <p><strong>創立:</strong> 2009年7月1日</p>
-        <p><strong>特徴:</strong> 様々な分野に特化したコースが多いことです。</p>
-        <p><strong>所属していたクラス:</strong> 3年B組</p>
+        <img src="C:\Users\a-aizawa\Desktop\開発技術\GitGroup_01\img\seikagakuen.jpg" alt="学校の画像" class="school-image">
+        <p><strong>学校名:</strong>精華学園高等学校</p>
+        <p><strong>創立:</strong>2009年7月1日</p>
+        <p><strong>特徴:</strong>様々な分野に特化したコースが多いことです。</p>
+        <p><strong>所属していたクラス:</strong>3年B組</p>
     </div>
 
-    <div class="content comments">
+    <div id="comments-section" class="content comments">
         <h2>班員からのコメント</h2>
         <div id="comments-section">
             <!-- Gitを活用してコメントをここに追加 -->
+           <p>岡本：</p>
+           <p>杉山：</p>
+           <p>野村：</p>
+           <p>逢澤：最近にできた学校でキレイ目な校舎がよいと思った。</p>
         </div>
     </div>
 
-    <div class="content counter">
+    <div id="counter-section" class="content counter">
         <h2>カウントボタン</h2>
         <p>ボタンを押した回数: <span id="count">0</span></p>
         <button class="increment" onclick="incrementCount()">カウント</button>
         <button class="reset" onclick="resetCount()">リセット</button>
     </div>
 
-    <div class="content links">
+    <div id="links-section" class="content links">
         <h2>班員紹介ページ</h2>
         <ul>
-            <li><a href="member1.html">岡本の紹介ページ</a></li>
-            <li><a href="member2.html">杉山の紹介ページ</a></li>
-            <li><a href="member3.html">野村の紹介ページ</a></li>
-            <!-- その他の班員リンクを追加 -->
+            <li><a href="file:///C:/Users/a-aizawa/Desktop/%E9%96%8B%E7%99%BA%E6%8A%80%E8%A1%93/GitGroup_01/members/aizawa.html">岡本作成の紹介ページ</a></li>
+            <li><a href="file:///C:/Users/a-aizawa/Desktop/%E9%96%8B%E7%99%BA%E6%8A%80%E8%A1%93/GitGroup_01/members/okamoto.html">杉山作成の紹介ページ</a></li>
+            <li><a href="member3.html">野村作成の紹介ページ</a></li>
         </ul>
     </div>
 
