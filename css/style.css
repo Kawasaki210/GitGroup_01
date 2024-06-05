@@ -1322,4 +1322,18 @@ animationの行の「0.5s」が文字の出現のなめらかさで、大きい�
 	.sh {display: none;}
 	.pc {display: block;}
 
-	}/*追加指定ここまで*/
+	}
+}
+
+#omikuji-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#omikuji-result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
